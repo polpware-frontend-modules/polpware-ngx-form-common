@@ -1,0 +1,5 @@
+/*
+ * Public API Surface of ngx-form-common
+ */
+export * from './lib/interfaces/has-alert-info.interface';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0Bwb2xwd2FyZS9uZ3gtZm9ybS1jb21tb24vIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYywyQ0FBMkMsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qXG4gKiBQdWJsaWMgQVBJIFN1cmZhY2Ugb2Ygbmd4LWZvcm0tY29tbW9uXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvaW50ZXJmYWNlcy9oYXMtYWxlcnQtaW5mby5pbnRlcmZhY2UnO1xuIl19

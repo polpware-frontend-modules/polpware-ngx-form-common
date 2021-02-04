@@ -6,10 +6,10 @@ import * as i0 from "@angular/core";
  * Models the inputs for the default reusable form.
  */
 export interface IDefaultFormInputs {
-    hideCancelBtn: boolean;
-    hideSubmitBtn: boolean;
-    submitBtnTxt: string;
-    cancelBtnTxt: string;
+    hideCancelBtn?: boolean;
+    hideSubmitBtn?: boolean;
+    submitBtnTxt?: string;
+    cancelBtnTxt?: string;
 }
 /**
  * Provides a base for defining a reusable form.

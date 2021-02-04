@@ -1,0 +1,28 @@
+import { Input, Output, EventEmitter } from '@angular/core';
+import * as i0 from "@angular/core";
+/**
+ * Provides a base for defining a reusable form.
+ */
+export class DefaultFormBaseComponent {
+    constructor() {
+        this.hideCancelBtn = false;
+        this.hideSubmitBtn = false;
+        this.submitBtnTxt = 'Submit';
+        this.cancelBtnTxt = 'Cancel';
+        this.onSave = new EventEmitter();
+        this.onCancel = new EventEmitter();
+        this.onValueChanged = new EventEmitter();
+        this.onValidation = new EventEmitter();
+    }
+    notifyValidation() {
+        this.onValidation.emit({
+            valid: this.form.valid
+        });
+    }
+    notifyValueChanges(a) {
+        this.onValueChanged.emit(a);
+    }
+}
+DefaultFormBaseComponent.ɵfac = function DefaultFormBaseComponent_Factory(t) { return new (t || DefaultFormBaseComponent)(); };
+DefaultFormBaseComponent.ɵdir = i0.ɵɵdefineDirective({ type: DefaultFormBaseComponent, inputs: { hideCancelBtn: "hideCancelBtn", hideSubmitBtn: "hideSubmitBtn", submitBtnTxt: "submitBtnTxt", cancelBtnTxt: "cancelBtnTxt" }, outputs: { onSave: "onSave", onCancel: "onCancel", onValueChanged: "onValueChanged", onValidation: "onValidation" } });
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVmYXVsdC1mb3JtLWJhc2UtY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6Im5nOi8vQHBvbHB3YXJlL25neC1mb3JtLWNvbW1vbi8iLCJzb3VyY2VzIjpbImxpYi9iYXNlcy9kZWZhdWx0LWZvcm0tYmFzZS1jb21wb25lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsT0FBTyxFQUFFLEtBQUssRUFBRSxNQUFNLEVBQUUsWUFBWSxFQUFFLE1BQU0sZUFBZSxDQUFDOztBQWU1RDs7R0FFRztBQUNILE1BQU0sT0FBZ0Isd0JBQXdCO0lBQTlDO1FBT0ksa0JBQWEsR0FBWSxLQUFLLENBQUM7UUFFL0Isa0JBQWEsR0FBWSxLQUFLLENBQUM7UUFFL0IsaUJBQVksR0FBVyxRQUFRLENBQUM7UUFFaEMsaUJBQVksR0FBVyxRQUFRLENBQUM7UUFHdkIsV0FBTSxHQUFHLElBQUksWUFBWSxFQUFFLENBQUM7UUFFNUIsYUFBUSxHQUFHLElBQUksWUFBWSxFQUFFLENBQUM7UUFFOUIsbUJBQWMsR0FBRyxJQUFJLFlBQVksRUFBRSxDQUFDO1FBRXBDLGlCQUFZLEdBQUcsSUFBSSxZQUFZLEVBQUUsQ0FBQztLQVc5QztJQVRVLGdCQUFnQjtRQUNuQixJQUFJLENBQUMsWUFBWSxDQUFDLElBQUksQ0FBQztZQUNuQixLQUFLLEVBQUUsSUFBSSxDQUFDLElBQUksQ0FBQyxLQUFLO1NBQ3pCLENBQUMsQ0FBQztJQUNQLENBQUM7SUFFTSxrQkFBa0IsQ0FBQyxDQUFNO1FBQzVCLElBQUksQ0FBQyxjQUFjLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxDQUFDO0lBQ2hDLENBQUM7O2dHQWhDaUIsd0JBQXdCOzZEQUF4Qix3QkFBd0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBJbnB1dCwgT3V0cHV0LCBFdmVudEVtaXR0ZXIgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgRm9ybUdyb3VwIH0gZnJvbSAnQGFuZ3VsYXIvZm9ybXMnO1xyXG5pbXBvcnQgeyBJSGFzTm90aWZpY2F0aW9ucyB9IGZyb20gJy4uL2ludGVyZmFjZXMvaGFzLW5vdGlmaWNhdGlvbnMuaW50ZXJmYWNlJztcclxuXHJcblxyXG4vKipcclxuICogTW9kZWxzIHRoZSBpbnB1dHMgZm9yIHRoZSBkZWZhdWx0IHJldXNhYmxlIGZvcm0uXHJcbiAqL1xyXG5leHBvcnQgaW50ZXJmYWNlIElEZWZhdWx0Rm9ybUlucHV0cyB7XHJcbiAgICBoaWRlQ2FuY2VsQnRuOiBib29sZWFuO1xyXG4gICAgaGlkZVN1Ym1pdEJ0bjogYm9vbGVhbjtcclxuICAgIHN1Ym1pdEJ0blR4dDogc3RyaW5nO1xyXG4gICAgY2FuY2VsQnRuVHh0OiBzdHJpbmc7XHJcbn1cclxuXHJcbi8qKlxyXG4gKiBQcm92aWRlcyBhIGJhc2UgZm9yIGRlZmluaW5nIGEgcmV1c2FibGUgZm9ybS4gXHJcbiAqL1xyXG5leHBvcnQgYWJzdHJhY3QgY2xhc3MgRGVmYXVsdEZvcm1CYXNlQ29tcG9uZW50IGltcGxlbWVudHMgSUhhc05vdGlmaWNhdGlvbnMge1xyXG5cclxuICAgIGlzU2F2aW5nOiBib29sZWFuO1xyXG5cclxuICAgIGFic3RyYWN0IHJlYWRvbmx5IGZvcm06IEZvcm1Hcm91cDtcclxuXHJcbiAgICBASW5wdXQoKVxyXG4gICAgaGlkZUNhbmNlbEJ0bjogYm9vbGVhbiA9IGZhbHNlO1xyXG4gICAgQElucHV0KClcclxuICAgIGhpZGVTdWJtaXRCdG46IGJvb2xlYW4gPSBmYWxzZTtcclxuICAgIEBJbnB1dCgpXHJcbiAgICBzdWJtaXRCdG5UeHQ6IHN0cmluZyA9ICdTdWJtaXQnO1xyXG4gICAgQElucHV0KClcclxuICAgIGNhbmNlbEJ0blR4dDogc3RyaW5nID0gJ0NhbmNlbCc7XHJcblxyXG4gICAgQE91dHB1dCgpXHJcbiAgICByZWFkb25seSBvblNhdmUgPSBuZXcgRXZlbnRFbWl0dGVyKCk7XHJcbiAgICBAT3V0cHV0KClcclxuICAgIHJlYWRvbmx5IG9uQ2FuY2VsID0gbmV3IEV2ZW50RW1pdHRlcigpO1xyXG4gICAgQE91dHB1dCgpXHJcbiAgICByZWFkb25seSBvblZhbHVlQ2hhbmdlZCA9IG5ldyBFdmVudEVtaXR0ZXIoKTtcclxuICAgIEBPdXRwdXQoKVxyXG4gICAgcmVhZG9ubHkgb25WYWxpZGF0aW9uID0gbmV3IEV2ZW50RW1pdHRlcigpO1xyXG5cclxuICAgIHB1YmxpYyBub3RpZnlWYWxpZGF0aW9uKCkge1xyXG4gICAgICAgIHRoaXMub25WYWxpZGF0aW9uLmVtaXQoe1xyXG4gICAgICAgICAgICB2YWxpZDogdGhpcy5mb3JtLnZhbGlkXHJcbiAgICAgICAgfSk7XHJcbiAgICB9XHJcblxyXG4gICAgcHVibGljIG5vdGlmeVZhbHVlQ2hhbmdlcyhhOiBhbnkpIHtcclxuICAgICAgICB0aGlzLm9uVmFsdWVDaGFuZ2VkLmVtaXQoYSk7XHJcbiAgICB9XHJcbn1cclxuIl19

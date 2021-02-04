@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-    typeof define === 'function' && define.amd ? define('@polpware/ngx-form-common', ['exports'], factory) :
-    (global = global || self, factory((global.polpware = global.polpware || {}, global.polpware['ngx-form-common'] = {})));
-}(this, (function (exports) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core')) :
+    typeof define === 'function' && define.amd ? define('@polpware/ngx-form-common', ['exports', '@angular/core'], factory) :
+    (global = global || self, factory((global.polpware = global.polpware || {}, global.polpware['ngx-form-common'] = {}), global.ng.core));
+}(this, (function (exports, core) { 'use strict';
 
     /**
      * Models different kinds of messages.
@@ -33,6 +33,35 @@
         SubmissionStateEnum[SubmissionStateEnum["Failure"] = 3] = "Failure";
         SubmissionStateEnum[SubmissionStateEnum["Other"] = 4] = "Other";
     })(exports.SubmissionStateEnum || (exports.SubmissionStateEnum = {}));
+
+    /**
+     * Provides a base for defining a reusable form.
+     */
+    var DefaultFormBaseComponent = /** @class */ (function () {
+        function DefaultFormBaseComponent() {
+            this.hideCancelBtn = false;
+            this.hideSubmitBtn = false;
+            this.submitBtnTxt = 'Submit';
+            this.cancelBtnTxt = 'Cancel';
+            this.onSave = new core.EventEmitter();
+            this.onCancel = new core.EventEmitter();
+            this.onValueChanged = new core.EventEmitter();
+            this.onValidation = new core.EventEmitter();
+        }
+        DefaultFormBaseComponent.prototype.notifyValidation = function () {
+            this.onValidation.emit({
+                valid: this.form.valid
+            });
+        };
+        DefaultFormBaseComponent.prototype.notifyValueChanges = function (a) {
+            this.onValueChanged.emit(a);
+        };
+        DefaultFormBaseComponent.ɵfac = function DefaultFormBaseComponent_Factory(t) { return new (t || DefaultFormBaseComponent)(); };
+        DefaultFormBaseComponent.ɵdir = core.ɵɵdefineDirective({ type: DefaultFormBaseComponent, inputs: { hideCancelBtn: "hideCancelBtn", hideSubmitBtn: "hideSubmitBtn", submitBtnTxt: "submitBtnTxt", cancelBtnTxt: "cancelBtnTxt" }, outputs: { onSave: "onSave", onCancel: "onCancel", onValueChanged: "onValueChanged", onValidation: "onValidation" } });
+        return DefaultFormBaseComponent;
+    }());
+
+    exports.DefaultFormBaseComponent = DefaultFormBaseComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

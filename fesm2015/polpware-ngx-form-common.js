@@ -1,3 +1,5 @@
+import { EventEmitter, ɵɵdefineDirective } from '@angular/core';
+
 /**
  * Models different kinds of messages.
  *
@@ -28,6 +30,32 @@ var SubmissionStateEnum;
     SubmissionStateEnum[SubmissionStateEnum["Other"] = 4] = "Other";
 })(SubmissionStateEnum || (SubmissionStateEnum = {}));
 
+/**
+ * Provides a base for defining a reusable form.
+ */
+class DefaultFormBaseComponent {
+    constructor() {
+        this.hideCancelBtn = false;
+        this.hideSubmitBtn = false;
+        this.submitBtnTxt = 'Submit';
+        this.cancelBtnTxt = 'Cancel';
+        this.onSave = new EventEmitter();
+        this.onCancel = new EventEmitter();
+        this.onValueChanged = new EventEmitter();
+        this.onValidation = new EventEmitter();
+    }
+    notifyValidation() {
+        this.onValidation.emit({
+            valid: this.form.valid
+        });
+    }
+    notifyValueChanges(a) {
+        this.onValueChanged.emit(a);
+    }
+}
+DefaultFormBaseComponent.ɵfac = function DefaultFormBaseComponent_Factory(t) { return new (t || DefaultFormBaseComponent)(); };
+DefaultFormBaseComponent.ɵdir = ɵɵdefineDirective({ type: DefaultFormBaseComponent, inputs: { hideCancelBtn: "hideCancelBtn", hideSubmitBtn: "hideSubmitBtn", submitBtnTxt: "submitBtnTxt", cancelBtnTxt: "cancelBtnTxt" }, outputs: { onSave: "onSave", onCancel: "onCancel", onValueChanged: "onValueChanged", onValidation: "onValidation" } });
+
 /*
  * Public API Surface of ngx-form-common
  */
@@ -36,5 +64,5 @@ var SubmissionStateEnum;
  * Generated bundle index. Do not edit.
  */
 
-export { AlertTypeEnum, SubmissionStateEnum };
+export { AlertTypeEnum, DefaultFormBaseComponent, SubmissionStateEnum };
 //# sourceMappingURL=polpware-ngx-form-common.js.map

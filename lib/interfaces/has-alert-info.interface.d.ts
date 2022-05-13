@@ -20,3 +20,4 @@ export interface IHasAlertInfo {
     alertType: AlertTypeEnum;
     alertDismissible: boolean;
 }
+//# sourceMappingURL=has-alert-info.interface.d.ts.map

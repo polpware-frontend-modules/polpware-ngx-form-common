@@ -27,6 +27,7 @@ export declare abstract class DefaultFormBaseComponent implements IHasNotificati
     readonly onValidation: EventEmitter<any>;
     notifyValidation(): void;
     notifyValueChanges(a: any): void;
-    static ɵfac: i0.ɵɵFactoryDef<DefaultFormBaseComponent, never>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<DefaultFormBaseComponent, never, never, { "hideCancelBtn": "hideCancelBtn"; "hideSubmitBtn": "hideSubmitBtn"; "submitBtnTxt": "submitBtnTxt"; "cancelBtnTxt": "cancelBtnTxt"; }, { "onSave": "onSave"; "onCancel": "onCancel"; "onValueChanged": "onValueChanged"; "onValidation": "onValidation"; }, never>;
+    static ɵfac: i0.ɵɵFactoryDeclaration<DefaultFormBaseComponent, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<DefaultFormBaseComponent, never, never, { "hideCancelBtn": "hideCancelBtn"; "hideSubmitBtn": "hideSubmitBtn"; "submitBtnTxt": "submitBtnTxt"; "cancelBtnTxt": "cancelBtnTxt"; }, { "onSave": "onSave"; "onCancel": "onCancel"; "onValueChanged": "onValueChanged"; "onValidation": "onValidation"; }, never>;
 }
+//# sourceMappingURL=default-form-base-component.d.ts.map

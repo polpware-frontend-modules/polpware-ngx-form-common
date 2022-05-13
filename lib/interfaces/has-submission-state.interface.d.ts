@@ -11,3 +11,4 @@ export declare enum SubmissionStateEnum {
 export interface IHasSubmissionState {
     submissionState: SubmissionStateEnum;
 }
+//# sourceMappingURL=has-submission-state.interface.d.ts.map

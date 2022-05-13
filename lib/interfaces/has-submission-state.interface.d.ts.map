@@ -1,0 +1,1 @@
+{"version":3,"file":"has-submission-state.interface.d.ts","sourceRoot":"","sources":["../../../../../projects/polpware/ngx-form-common/src/lib/interfaces/has-submission-state.interface.ts"],"names":[],"mappings":"AAAA;;GAEG;AACH,oBAAY,mBAAmB;IAC3B,IAAI,IAAI;IACR,UAAU,IAAI;IACd,OAAO,IAAI;IACX,OAAO,IAAI;IACX,KAAK,IAAI;CACZ;AAED,MAAM,WAAW,mBAAmB;IAChC,eAAe,EAAE,mBAAmB,CAAC;CACxC"}

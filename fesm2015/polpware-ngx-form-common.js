@@ -1,4 +1,4 @@
-import { EventEmitter, ɵɵdefineDirective } from '@angular/core';
+import { EventEmitter, ɵɵdefineDirective, ɵsetClassMetadata, Directive, Input, Output } from '@angular/core';
 
 /**
  * Models different kinds of messages.
@@ -55,6 +55,25 @@ class DefaultFormBaseComponent {
 }
 DefaultFormBaseComponent.ɵfac = function DefaultFormBaseComponent_Factory(t) { return new (t || DefaultFormBaseComponent)(); };
 DefaultFormBaseComponent.ɵdir = ɵɵdefineDirective({ type: DefaultFormBaseComponent, inputs: { hideCancelBtn: "hideCancelBtn", hideSubmitBtn: "hideSubmitBtn", submitBtnTxt: "submitBtnTxt", cancelBtnTxt: "cancelBtnTxt" }, outputs: { onSave: "onSave", onCancel: "onCancel", onValueChanged: "onValueChanged", onValidation: "onValidation" } });
+/*@__PURE__*/ (function () { ɵsetClassMetadata(DefaultFormBaseComponent, [{
+        type: Directive
+    }], null, { hideCancelBtn: [{
+            type: Input
+        }], hideSubmitBtn: [{
+            type: Input
+        }], submitBtnTxt: [{
+            type: Input
+        }], cancelBtnTxt: [{
+            type: Input
+        }], onSave: [{
+            type: Output
+        }], onCancel: [{
+            type: Output
+        }], onValueChanged: [{
+            type: Output
+        }], onValidation: [{
+            type: Output
+        }] }); })();
 
 /*
  * Public API Surface of ngx-form-common

@@ -60,6 +60,25 @@
         DefaultFormBaseComponent.ɵdir = core.ɵɵdefineDirective({ type: DefaultFormBaseComponent, inputs: { hideCancelBtn: "hideCancelBtn", hideSubmitBtn: "hideSubmitBtn", submitBtnTxt: "submitBtnTxt", cancelBtnTxt: "cancelBtnTxt" }, outputs: { onSave: "onSave", onCancel: "onCancel", onValueChanged: "onValueChanged", onValidation: "onValidation" } });
         return DefaultFormBaseComponent;
     }());
+    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(DefaultFormBaseComponent, [{
+            type: core.Directive
+        }], null, { hideCancelBtn: [{
+                type: core.Input
+            }], hideSubmitBtn: [{
+                type: core.Input
+            }], submitBtnTxt: [{
+                type: core.Input
+            }], cancelBtnTxt: [{
+                type: core.Input
+            }], onSave: [{
+                type: core.Output
+            }], onCancel: [{
+                type: core.Output
+            }], onValueChanged: [{
+                type: core.Output
+            }], onValidation: [{
+                type: core.Output
+            }] }); })();
 
     exports.DefaultFormBaseComponent = DefaultFormBaseComponent;
 

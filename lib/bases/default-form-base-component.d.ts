@@ -28,6 +28,6 @@ export declare abstract class DefaultFormBaseComponent implements IHasNotificati
     notifyValidation(): void;
     notifyValueChanges(a: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<DefaultFormBaseComponent, never>;
-    static ɵdir: i0.ɵɵDirectiveDeclaration<DefaultFormBaseComponent, never, never, { "hideCancelBtn": "hideCancelBtn"; "hideSubmitBtn": "hideSubmitBtn"; "submitBtnTxt": "submitBtnTxt"; "cancelBtnTxt": "cancelBtnTxt"; }, { "onSave": "onSave"; "onCancel": "onCancel"; "onValueChanged": "onValueChanged"; "onValidation": "onValidation"; }, never, never, false>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<DefaultFormBaseComponent, never, never, { "hideCancelBtn": "hideCancelBtn"; "hideSubmitBtn": "hideSubmitBtn"; "submitBtnTxt": "submitBtnTxt"; "cancelBtnTxt": "cancelBtnTxt"; }, { "onSave": "onSave"; "onCancel": "onCancel"; "onValueChanged": "onValueChanged"; "onValidation": "onValidation"; }, never, never, false, never>;
 }
 //# sourceMappingURL=default-form-base-component.d.ts.map

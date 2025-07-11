@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { EventEmitter, Directive, Input, Output } from '@angular/core';
+import { EventEmitter, Directive, Output, Input } from '@angular/core';
 
 /**
  * Models different kinds of messages.
@@ -56,7 +56,7 @@ class DefaultFormBaseComponent {
     static { this.ɵfac = function DefaultFormBaseComponent_Factory(t) { return new (t || DefaultFormBaseComponent)(); }; }
     static { this.ɵdir = /*@__PURE__*/ i0.ɵɵdefineDirective({ type: DefaultFormBaseComponent, inputs: { hideCancelBtn: "hideCancelBtn", hideSubmitBtn: "hideSubmitBtn", submitBtnTxt: "submitBtnTxt", cancelBtnTxt: "cancelBtnTxt" }, outputs: { onSave: "onSave", onCancel: "onCancel", onValueChanged: "onValueChanged", onValidation: "onValidation" } }); }
 }
-(function () { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(DefaultFormBaseComponent, [{
+(() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(DefaultFormBaseComponent, [{
         type: Directive
     }], null, { hideCancelBtn: [{
             type: Input

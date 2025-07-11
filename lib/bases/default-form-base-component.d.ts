@@ -1,5 +1,5 @@
 import { EventEmitter } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { UntypedFormGroup } from '@angular/forms';
 import { IHasNotifications } from '../interfaces/has-notifications.interface';
 import * as i0 from "@angular/core";
 /**
@@ -16,7 +16,7 @@ export interface IDefaultFormInputs {
  */
 export declare abstract class DefaultFormBaseComponent implements IHasNotifications {
     isSaving: boolean;
-    abstract readonly form: FormGroup;
+    abstract readonly form: UntypedFormGroup;
     hideCancelBtn: boolean;
     hideSubmitBtn: boolean;
     submitBtnTxt: string;
@@ -28,6 +28,6 @@ export declare abstract class DefaultFormBaseComponent implements IHasNotificati
     notifyValidation(): void;
     notifyValueChanges(a: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<DefaultFormBaseComponent, never>;
-    static ɵdir: i0.ɵɵDirectiveDeclaration<DefaultFormBaseComponent, never, never, { "hideCancelBtn": "hideCancelBtn"; "hideSubmitBtn": "hideSubmitBtn"; "submitBtnTxt": "submitBtnTxt"; "cancelBtnTxt": "cancelBtnTxt"; }, { "onSave": "onSave"; "onCancel": "onCancel"; "onValueChanged": "onValueChanged"; "onValidation": "onValidation"; }, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<DefaultFormBaseComponent, never, never, { "hideCancelBtn": "hideCancelBtn"; "hideSubmitBtn": "hideSubmitBtn"; "submitBtnTxt": "submitBtnTxt"; "cancelBtnTxt": "cancelBtnTxt"; }, { "onSave": "onSave"; "onCancel": "onCancel"; "onValueChanged": "onValueChanged"; "onValidation": "onValidation"; }, never, never, false>;
 }
 //# sourceMappingURL=default-form-base-component.d.ts.map

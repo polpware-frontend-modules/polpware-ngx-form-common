@@ -28,6 +28,6 @@ export declare abstract class DefaultFormBaseComponent implements IHasNotificati
     notifyValidation(): void;
     notifyValueChanges(a: any): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<DefaultFormBaseComponent, never>;
-    static ɵdir: i0.ɵɵDirectiveDeclaration<DefaultFormBaseComponent, never, never, { "hideCancelBtn": { "alias": "hideCancelBtn"; "required": false; }; "hideSubmitBtn": { "alias": "hideSubmitBtn"; "required": false; }; "submitBtnTxt": { "alias": "submitBtnTxt"; "required": false; }; "cancelBtnTxt": { "alias": "cancelBtnTxt"; "required": false; }; }, { "onSave": "onSave"; "onCancel": "onCancel"; "onValueChanged": "onValueChanged"; "onValidation": "onValidation"; }, never, never, false, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<DefaultFormBaseComponent, never, never, { "hideCancelBtn": { "alias": "hideCancelBtn"; "required": false; }; "hideSubmitBtn": { "alias": "hideSubmitBtn"; "required": false; }; "submitBtnTxt": { "alias": "submitBtnTxt"; "required": false; }; "cancelBtnTxt": { "alias": "cancelBtnTxt"; "required": false; }; }, { "onSave": "onSave"; "onCancel": "onCancel"; "onValueChanged": "onValueChanged"; "onValidation": "onValidation"; }, never, never, true, never>;
 }
 //# sourceMappingURL=default-form-base-component.d.ts.map

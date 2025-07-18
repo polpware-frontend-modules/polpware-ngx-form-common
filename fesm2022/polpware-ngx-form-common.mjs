@@ -53,7 +53,7 @@ class DefaultFormBaseComponent {
     notifyValueChanges(a) {
         this.onValueChanged.emit(a);
     }
-    static { this.ɵfac = function DefaultFormBaseComponent_Factory(t) { return new (t || DefaultFormBaseComponent)(); }; }
+    static { this.ɵfac = function DefaultFormBaseComponent_Factory(__ngFactoryType__) { return new (__ngFactoryType__ || DefaultFormBaseComponent)(); }; }
     static { this.ɵdir = /*@__PURE__*/ i0.ɵɵdefineDirective({ type: DefaultFormBaseComponent, inputs: { hideCancelBtn: "hideCancelBtn", hideSubmitBtn: "hideSubmitBtn", submitBtnTxt: "submitBtnTxt", cancelBtnTxt: "cancelBtnTxt" }, outputs: { onSave: "onSave", onCancel: "onCancel", onValueChanged: "onValueChanged", onValidation: "onValidation" } }); }
 }
 (() => { (typeof ngDevMode === "undefined" || ngDevMode) && i0.ɵsetClassMetadata(DefaultFormBaseComponent, [{
